@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fetch Example</h1>
+
+  <pre>
+    fetch('https://ibos-deploy.vercel.app/verifyToken', {
+      method: 'GET',
+      headers: {
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzA5MTg0YTNhNmY5OTllZTJlY2RmOSIsImVtYWlsIjoiaGFzc2FuYWJkZWxhemltLm1heEBnbWFpbC5jb20iLCJpYXQiOjE3MjQ0NTQ3MjQsImV4cCI6MTcyNDU0MTEyNH0.EpeBArn5LsGxoV_q0fqtnkJDC2gj157JKs26C-vT_6k',
+      },
+    })
+    .then(res => res.json())
+    .then(console.log);
+  </pre>
+
+  <script>
+    fetch('https://ibos-deploy.vercel.app/verifyToken', {
+      method: 'GET',
+      headers: {
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YzA5MTg0YTNhNmY5OTllZTJlY2RmOSIsImVtYWlsIjoiaGFzc2FuYWJkZWxhemltLm1heEBnbWFpbC5jb20iLCJpYXQiOjE3MjQ0NTQ3MjQsImV4cCI6MTcyNDU0MTEyNH0.EpeBArn5LsGxoV_q0fqtnkJDC2gj157JKs26C-vT_6k',
+      },
+    })
+    .then(res => res.json())
+    .then(console.log);
+  </script>
+</body>
+</html>

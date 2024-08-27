@@ -1,0 +1,30 @@
+{
+  "name": "ibos",
+  "version": "1.0.0",
+  "description": "The is project for finance investment",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Islam Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "bcryptjs": "^2.4.3",
+    "cohere-ai": "^7.12.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.13.3",
+    "joi-password-complexity": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "nodemailer": "^6.9.14",
+    "openai": "^4.55.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
